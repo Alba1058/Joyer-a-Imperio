@@ -1,378 +1,404 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imperio Jewelry</title>
-<link href="assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperio Jewelry</title>
+  <link href="assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Urbanist:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-imperio py-3 fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <span class="marca-d">D</span>
-      <span class="d-flex flex-column lh-1">
-        <span class="marca-nombre">IMPERIO</span>
-        <span class="marca-sub">JEWELRY</span>
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navImperio">
-      <ul class="navbar-nav mx-lg-auto gap-lg-4">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
-        <li class="nav-item"><a class="nav-link" href="catalogo.html">Colecciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-      </ul>
-      <div class="d-flex align-items-center gap-4 iconos-nav mt-4 mt-lg-0">
-        <a href="catalogo.html" aria-label="Buscar"><i class="bi bi-search"></i></a>
-        <a href="login.html" data-bs-toggle="modal" data-bs-target="#modalCuenta" aria-label="Iniciar sesión"><i class="bi bi-person"></i></a>
-        <a href="carrito.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-label="Carrito" class="position-relative">
-          <i class="bi bi-bag"></i><span class="badge-carrito">2</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <p class="hero-eyebrow mb-3">Colección Exclusiva</p>
-        <h1 class="hero-titulo mb-4">El oro que<br>queda para siempre</h1>
-        <p class="hero-texto">Piezas trabajadas a mano en oro y plata, pensadas para acompañar cada momento importante. Cada diseño de Imperio Jewelry es único, igual que quien lo lleva.</p>
-        <div class="d-flex gap-3 mt-4">
-          <a href="catalogo.html" class="btn btn-imperio-dorado">Ver catálogo</a>
-          <a href="#colecciones" class="btn btn-imperio-contorno">Explorar colecciones</a>
-        </div>
-      </div>
-      <div class="col-lg-6 mt-5 mt-lg-0 text-center">
-        <img src="img/hero.jpg" alt="Pieza destacada Imperio Jewelry" class="img-fluid hero-figura">
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- COLECCIONES -->
-<section id="colecciones" class="py-5">
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
-      <h2 class="titulo-seccion mb-0">Nuestras colecciones</h2>
-      <a href="catalogo.html" class="enlace-ver-todo">Ver todo el catálogo</a>
-    </div>
-    <div class="row g-4">
-      <div class="col-6 col-md-3">
-        <a href="catalogo.html?categoria=anillos" class="bloque-coleccion d-block position-relative">
-          <img src="img/anillos.jpg" alt="Anillos" class="img-fluid">
-          <span>Anillos</span>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="catalogo.html?categoria=collares" class="bloque-coleccion d-block position-relative">
-          <img src="img/collares.jpg" alt="Collares" class="img-fluid">
-          <span>Collares</span>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="catalogo.html?categoria=aretes" class="bloque-coleccion d-block position-relative">
-          <img src="img/aretes.jpg" alt="Aretes" class="img-fluid">
-          <span>Aretes</span>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="catalogo.html?categoria=pulseras" class="bloque-coleccion d-block position-relative">
-          <img src="img/pulseras.jpg" alt="Pulseras" class="img-fluid">
-          <span>Pulseras</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BANNER OFERTA -->
-<section class="banner-oferta py-5">
-  <div class="container">
-    <div class="row align-items-center text-center text-lg-start">
-      <div class="col-lg-7 mx-auto mx-lg-0">
-        <p class="banner-eyebrow mb-2">Edición limitada</p>
-        <h3 class="mb-3">20% en la línea de diamantes</h3>
-        <p class="mb-4">Aplica en anillos y aretes seleccionados de la colección Ethereal.</p>
-        <a href="catalogo.html?categoria=diamantes" class="btn btn-imperio-dorado">Ver piezas</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DESTACADOS -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="titulo-seccion mb-4">Lo más elegido</h2>
-    <div class="row g-4">
-      <div class="col-6 col-md-3">
-        <a href="producto.html" class="item-producto d-block">
-          <div class="item-producto-img-wrap">
-            <img src="img/prod-collar.jpg" alt="Collar clásico" class="img-fluid">
-          </div>
-          <h4 class="mb-1">Collar Clásico</h4>
-          <p class="precio mb-0">RD$74,990</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="producto.html" class="item-producto d-block">
-          <div class="item-producto-img-wrap">
-            <img src="img/prod-anillo.jpg" alt="Anillo oro y diamante" class="img-fluid">
-          </div>
-          <h4 class="mb-1">Anillo Oro y Diamante</h4>
-          <p class="precio mb-0">RD$27,990</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="producto.html" class="item-producto d-block">
-          <div class="item-producto-img-wrap">
-            <img src="img/prod-aretes.jpg" alt="Aretes tradicionales" class="img-fluid">
-          </div>
-          <h4 class="mb-1">Aretes Tradicionales</h4>
-          <p class="precio mb-0">RD$33,990</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="producto.html" class="item-producto d-block">
-          <div class="item-producto-img-wrap">
-            <img src="img/prod-pulsera.jpg" alt="Pulsera tenis" class="img-fluid">
-          </div>
-          <h4 class="mb-1">Pulsera Tenis</h4>
-          <p class="precio mb-0">RD$52,990</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONFIANZA -->
-<section class="franja-confianza py-4">
-  <div class="container">
-    <div class="row text-center g-3">
-      <div class="col-6 col-md-3">Joyería certificada</div>
-      <div class="col-6 col-md-3">Envío asegurado</div>
-      <div class="col-6 col-md-3">Devolución en 30 días</div>
-      <div class="col-6 col-md-3">Pago seguro</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="pie-imperio pt-5 pb-3">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <p class="footer-marca d-flex align-items-center gap-2">
-          <span class="marca-d">D</span> IMPERIO <span class="marca-sub">JEWELRY</span>
-        </p>
-        <p class="footer-texto">Joyería fina para cada historia. Piezas atemporales, hechas para durar generaciones.</p>
-        <div class="d-flex gap-3 footer-redes mt-4">
-          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h5>Enlaces</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="index.html">Inicio</a></li>
-          <li class="mb-2"><a href="catalogo.html">Catálogo</a></li>
-          <li class="mb-2"><a href="index.html#colecciones">Colecciones</a></li>
-          <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h5>Políticas</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="privacidad.html">Política de privacidad</a></li>
-          <li class="mb-2"><a href="terminos.html">Términos de servicio</a></li>
-          <li class="mb-2"><a href="cambios.html">Cambios y devoluciones</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <h5>Únete al Círculo Imperio</h5>
-        <p class="footer-texto">Recibe ofertas exclusivas y acceso anticipado a nuevas colecciones.</p>
-        <form class="footer-newsletter d-flex mt-3" onsubmit="return false;">
-          <input type="email" class="flex-grow-1" placeholder="Tu correo electrónico" aria-label="Correo electrónico">
-          <button type="submit" aria-label="Suscribirse"><i class="bi bi-arrow-right"></i></button>
-        </form>
-      </div>
-    </div>
-    <hr class="my-4">
-    <p class="footer-final mb-0">© Imperio Jewelry. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-<!-- MODAL CUENTA DE CLIENTE -->
-<div class="modal fade modal-cuenta" id="modalCuenta" tabindex="-1" aria-labelledby="modalCuentaLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" style="max-width: 430px;">
-    <div class="modal-content">
-      <div class="modal-header d-flex justify-content-between align-items-center">
-        <h5 class="titulo-cuenta" id="modalCuentaLabel">
-          <i class="bi bi-person-circle me-2"></i>CUENTA DE CLIENTE
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <div class="tab-cuenta-switch">
-          <button type="button" class="btn-switch active" id="tabBtnLogin" onclick="document.getElementById('formLogin').classList.remove('d-none'); document.getElementById('formRegistro').classList.add('d-none'); this.classList.add('active'); document.getElementById('tabBtnRegistro').classList.remove('active');">Iniciar Sesión</button>
-          <button type="button" class="btn-switch" id="tabBtnRegistro" onclick="document.getElementById('formRegistro').classList.remove('d-none'); document.getElementById('formLogin').classList.add('d-none'); this.classList.add('active'); document.getElementById('tabBtnLogin').classList.remove('active');">Crear Cuenta</button>
-        </div>
-
-        <div id="formLogin">
-          <button type="button" class="btn-google mb-3">
-            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
-            CONTINUAR CON GOOGLE
-          </button>
-
-          <div class="divisor-cuenta">
-            <span>o con tu correo electrónico</span>
-          </div>
-
-          <form onsubmit="return false;">
-            <div class="mb-3">
-              <label class="form-label-cuenta">Correo electrónico</label>
-              <input type="email" class="input-cuenta" placeholder="ejemplo@correo.com">
-            </div>
-            <div class="mb-3">
-              <label class="form-label-cuenta">Contraseña</label>
-              <input type="password" class="input-cuenta" placeholder="Ingresa tu contraseña">
-            </div>
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="recordarSesion">
-                <label class="form-check-label" for="recordarSesion" style="font-size: 0.8rem; color: #555;">Recordarme</label>
-              </div>
-              <a href="#" style="font-size: 0.8rem; color: var(--dorado);">¿Olvidaste tu contraseña?</a>
-            </div>
-            <button type="submit" class="btn-cuenta-accion mb-2">INICIAR SESIÓN EN MI CUENTA</button>
-          </form>
-        </div>
-
-        <div id="formRegistro" class="d-none">
-          <form onsubmit="return false;">
-            <div class="mb-2">
-              <label class="form-label-cuenta">Nombre completo</label>
-              <input type="text" class="input-cuenta" placeholder="Nombre y Apellido">
-            </div>
-            <div class="mb-2">
-              <label class="form-label-cuenta">Correo electrónico</label>
-              <input type="email" class="input-cuenta" placeholder="ejemplo@correo.com">
-            </div>
-            <div class="mb-3">
-              <label class="form-label-cuenta">Contraseña</label>
-              <input type="password" class="input-cuenta" placeholder="Crea una contraseña">
-            </div>
-            <button type="submit" class="btn-cuenta-accion mb-2">CREAR MI CUENTA</button>
-          </form>
-        </div>
-
-        <div class="aviso-login-requisito">
-          <i class="bi bi-shield-check me-1 text-dark"></i>
-          <strong>Acceso a pedidos:</strong> Puedes explorar el catálogo y armar tu bolsa libremente. Para confirmar y despachar tu pedido se requiere iniciar sesión.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- CARRITO LATERAL -->
-<div class="offcanvas offcanvas-end offcanvas-carrito" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
-  <div class="offcanvas-header">
-    <h5 class="titulo-carrito" id="offcanvasCarritoLabel">
-      <i class="bi bi-bag me-2"></i>MI BOLSA ( 2 )
-    </h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="lista-items-carrito">
-      <div class="item-carrito-fila">
-        <img src="img/prod-anillo.jpg" alt="Anillo Hojas de Ginkgo" class="item-carrito-img">
-        <div class="flex-grow-1">
-          <div class="d-flex justify-content-between">
-            <div class="item-carrito-categoria">Colección Real</div>
-            <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
-          </div>
-          <div class="item-carrito-titulo">Anillo Hojas de Ginkgo</div>
-          <div class="item-carrito-detalles">Talla: 7 | Oro Amarillo 18K</div>
-          <div class="item-carrito-detalles">Ref: #IMP-811</div>
-          <div class="d-flex justify-content-between align-items-center mt-2">
-            <div class="item-carrito-precio">RD$27,990</div>
-            <div class="btn-cantidad-caja">
-              <button type="button">-</button>
-              <span>1</span>
-              <button type="button">+</button>
-            </div>
-          </div>
-          <a href="producto.html" class="ver-detalle-enlace">👁 Ver detalles de la pieza</a>
-        </div>
-      </div>
-
-      <div class="item-carrito-fila">
-        <img src="img/prod-collar.jpg" alt="Collar Clásico" class="item-carrito-img">
-        <div class="flex-grow-1">
-          <div class="d-flex justify-content-between">
-            <div class="item-carrito-categoria">Alta Joyería</div>
-            <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
-          </div>
-          <div class="item-carrito-titulo">Collar Clásico</div>
-          <div class="item-carrito-detalles">Largo: 45cm | Oro Amarillo 18K</div>
-          <div class="item-carrito-detalles">Ref: #IMP-920</div>
-          <div class="d-flex justify-content-between align-items-center mt-2">
-            <div class="item-carrito-precio">RD$74,990</div>
-            <div class="btn-cantidad-caja">
-              <button type="button">-</button>
-              <span>1</span>
-              <button type="button">+</button>
-            </div>
-          </div>
-          <a href="producto.html" class="ver-detalle-enlace">👁 Ver detalles de la pieza</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="codigo-promo-caja">
-      <input type="text" class="input-promo" placeholder="CÓDIGO DE CORTESÍA">
-      <button type="button" class="btn-aplicar-promo">APLICAR</button>
-    </div>
-
-    <div class="border-top pt-3">
-      <div class="resumen-totales-linea">
-        <span>Subtotal</span>
-        <span>RD$102,980</span>
-      </div>
-      <div class="resumen-totales-linea">
-        <span>Envío asegurado</span>
-        <span class="text-success fw-bold">Gratis</span>
-      </div>
-      <div class="resumen-totales-linea total-destacado">
-        <span>Total</span>
-        <span>RD$102,980</span>
-      </div>
-      <p class="text-muted mb-0 mt-1" style="font-size: 0.72rem;">Certificado gemológico y estuche de terciopelo incluidos.</p>
-
-      <button type="button" class="btn-finalizar-pedido" data-bs-toggle="modal" data-bs-target="#modalCuenta" data-bs-dismiss="offcanvas">
-        PROCEDER AL PEDIDO <i class="bi bi-arrow-right ms-1"></i>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-imperio py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="catalogo.html" class="enlace-seguir-comprando" data-bs-dismiss="offcanvas">Continuar explorando piezas</a>
+      <div class="collapse navbar-collapse" id="navImperio">
+        <ul class="navbar-nav mx-lg-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Colecciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-4 iconos-nav mt-4 mt-lg-0">
+          <a href="catalogo.html" aria-label="Buscar"><i class="bi bi-search"></i></a>
+          <a href="login.html" data-bs-toggle="modal" data-bs-target="#modalCuenta" aria-label="Iniciar sesión"><i
+              class="bi bi-person"></i></a>
+          <a href="carrito.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-label="Carrito"
+            class="position-relative">
+            <i class="bi bi-bag"></i><span class="badge-carrito">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="hero-eyebrow mb-3">Colección Exclusiva</p>
+          <h1 class="hero-titulo mb-4">El oro que<br>queda para siempre</h1>
+          <p class="hero-texto">Piezas trabajadas a mano en oro y plata, pensadas para acompañar cada momento
+            importante. Cada diseño de Imperio Jewelry es único, igual que quien lo lleva.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="catalogo.html" class="btn btn-imperio-dorado">Ver catálogo</a>
+            <a href="#colecciones" class="btn btn-imperio-contorno">Explorar colecciones</a>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0 text-center hero-images-wrapper">
+          <img src="img/anillos-new.jpg" alt="Anillos Imperio" class="hero-img-side hero-img-left">
+          <img src="img/collares-new.jpg" alt="Collares Imperio" class="hero-img-side hero-img-right">
+          <img src="img/hero-new.jpg" alt="Pieza destacada Imperio Jewelry" class="hero-img-center">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- COLECCIONES -->
+  <section id="colecciones" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+        <h2 class="titulo-seccion mb-0">Nuestras colecciones</h2>
+        <a href="catalogo.html" class="enlace-ver-todo">Ver todo el catálogo</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <a href="catalogo.html?categoria=anillos" class="bloque-coleccion d-block position-relative">
+            <img src="img/anillos-new.jpg" alt="Anillos" class="img-fluid">
+            <span>Anillos</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="catalogo.html?categoria=collares" class="bloque-coleccion d-block position-relative">
+            <img src="img/collares-new.jpg" alt="Collares" class="img-fluid">
+            <span>Collares</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="catalogo.html?categoria=aretes" class="bloque-coleccion d-block position-relative">
+            <img src="img/aretes-new.jpg" alt="Aretes" class="img-fluid">
+            <span>Aretes</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="catalogo.html?categoria=pulseras" class="bloque-coleccion d-block position-relative">
+            <img src="img/pulseras-new.jpg" alt="Pulseras" class="img-fluid">
+            <span>Pulseras</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER OFERTA -->
+  <section class="banner-oferta py-5">
+    <div class="container">
+      <div class="row align-items-center text-center text-lg-start">
+        <div class="col-lg-7 mx-auto mx-lg-0">
+          <p class="banner-eyebrow mb-2">Edición limitada</p>
+          <h3 class="mb-3">20% en la línea de diamantes</h3>
+          <p class="mb-4">Aplica en anillos y aretes seleccionados de la colección Ethereal.</p>
+          <a href="catalogo.html?categoria=diamantes" class="btn btn-imperio-dorado">Ver piezas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="titulo-seccion mb-4">Lo más elegido</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <a href="producto.html" class="item-producto d-block">
+            <div class="item-producto-img-wrap">
+              <img src="img/prod-collar-new.jpg" alt="Collar clásico" class="img-fluid">
+            </div>
+            <h4 class="mb-1">Collar Clásico</h4>
+            <p class="precio mb-0">RD$74,990</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="producto.html" class="item-producto d-block">
+            <div class="item-producto-img-wrap">
+              <img src="img/prod-anillo-new.jpg" alt="Anillo oro y diamante" class="img-fluid">
+            </div>
+            <h4 class="mb-1">Anillo Oro y Diamante</h4>
+            <p class="precio mb-0">RD$27,990</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="producto.html" class="item-producto d-block">
+            <div class="item-producto-img-wrap">
+              <img src="img/prod-aretes-new.jpg" alt="Aretes tradicionales" class="img-fluid">
+            </div>
+            <h4 class="mb-1">Aretes Tradicionales</h4>
+            <p class="precio mb-0">RD$33,990</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="producto.html" class="item-producto d-block">
+            <div class="item-producto-img-wrap">
+              <img src="img/prod-pulsera-new.jpg" alt="Pulsera tenis" class="img-fluid">
+            </div>
+            <h4 class="mb-1">Pulsera Tenis</h4>
+            <p class="precio mb-0">RD$52,990</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="franja-confianza py-4">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">Joyería certificada</div>
+        <div class="col-6 col-md-3">Envío asegurado</div>
+        <div class="col-6 col-md-3">Devolución en 30 días</div>
+        <div class="col-6 col-md-3">Pago seguro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pie-imperio pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-marca mb-3">
+            <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="footer-logo-img">
+          </div>
+          <p class="footer-texto">Joyería fina para cada historia. Piezas atemporales, hechas para durar generaciones.
+          </p>
+          <div class="d-flex gap-3 footer-redes mt-4">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Inicio</a></li>
+            <li class="mb-2"><a href="catalogo.html">Catálogo</a></li>
+            <li class="mb-2"><a href="index.html#colecciones">Colecciones</a></li>
+            <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Políticas</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="privacidad.html">Política de privacidad</a></li>
+            <li class="mb-2"><a href="terminos.html">Términos de servicio</a></li>
+            <li class="mb-2"><a href="cambios.html">Cambios y devoluciones</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Únete al Círculo Imperio</h5>
+          <p class="footer-texto">Recibe ofertas exclusivas y acceso anticipado a nuevas colecciones.</p>
+          <form class="footer-newsletter d-flex mt-3" onsubmit="return false;">
+            <input type="email" class="flex-grow-1" placeholder="Tu correo electrónico" aria-label="Correo electrónico">
+            <button type="submit" aria-label="Suscribirse"><i class="bi bi-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="footer-final mb-0">© Imperio Jewelry. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL CUENTA DE CLIENTE -->
+  <div class="modal fade modal-cuenta" id="modalCuenta" tabindex="-1" aria-labelledby="modalCuentaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 430px;">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between align-items-center">
+          <h5 class="titulo-cuenta" id="modalCuentaLabel">
+            <i class="bi bi-person-circle me-2"></i>CUENTA DE CLIENTE
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="tab-cuenta-switch">
+            <button type="button" class="btn-switch active" id="tabBtnLogin"
+              onclick="document.getElementById('formLogin').classList.remove('d-none'); document.getElementById('formRegistro').classList.add('d-none'); this.classList.add('active'); document.getElementById('tabBtnRegistro').classList.remove('active');">Iniciar
+              Sesión</button>
+            <button type="button" class="btn-switch" id="tabBtnRegistro"
+              onclick="document.getElementById('formRegistro').classList.remove('d-none'); document.getElementById('formLogin').classList.add('d-none'); this.classList.add('active'); document.getElementById('tabBtnLogin').classList.remove('active');">Crear
+              Cuenta</button>
+          </div>
+
+          <div id="formLogin">
+            <button type="button" class="btn-google mb-3">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="#4285F4"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                <path fill="#34A853"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                <path fill="#EA4335"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+              </svg>
+              CONTINUAR CON GOOGLE
+            </button>
+
+            <div class="divisor-cuenta">
+              <span>o con tu correo electrónico</span>
+            </div>
+
+            <form onsubmit="return false;">
+              <div class="mb-3">
+                <label class="form-label-cuenta">Correo electrónico</label>
+                <input type="email" class="input-cuenta" placeholder="ejemplo@correo.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label-cuenta">Contraseña</label>
+                <input type="password" class="input-cuenta" placeholder="Ingresa tu contraseña">
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="recordarSesion">
+                  <label class="form-check-label" for="recordarSesion"
+                    style="font-size: 0.8rem; color: #555;">Recordarme</label>
+                </div>
+                <a href="#" style="font-size: 0.8rem; color: var(--dorado);">¿Olvidaste tu contraseña?</a>
+              </div>
+              <button type="submit" class="btn-cuenta-accion mb-2">INICIAR SESIÓN EN MI CUENTA</button>
+            </form>
+          </div>
+
+          <div id="formRegistro" class="d-none">
+            <form onsubmit="return false;">
+              <div class="mb-2">
+                <label class="form-label-cuenta">Nombre completo</label>
+                <input type="text" class="input-cuenta" placeholder="Nombre y Apellido">
+              </div>
+              <div class="mb-2">
+                <label class="form-label-cuenta">Correo electrónico</label>
+                <input type="email" class="input-cuenta" placeholder="ejemplo@correo.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label-cuenta">Contraseña</label>
+                <input type="password" class="input-cuenta" placeholder="Crea una contraseña">
+              </div>
+              <button type="submit" class="btn-cuenta-accion mb-2">CREAR MI CUENTA</button>
+            </form>
+          </div>
+
+          <div class="aviso-login-requisito">
+            <i class="bi bi-shield-check me-1 text-dark"></i>
+            <strong>Acceso a pedidos:</strong> Puedes explorar el catálogo y armar tu bolsa libremente. Para confirmar y
+            despachar tu pedido se requiere iniciar sesión.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="assets/js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- CARRITO LATERAL -->
+  <div class="offcanvas offcanvas-end offcanvas-carrito" tabindex="-1" id="offcanvasCarrito"
+    aria-labelledby="offcanvasCarritoLabel">
+    <div class="offcanvas-header">
+      <h5 class="titulo-carrito" id="offcanvasCarritoLabel">
+        <i class="bi bi-bag me-2"></i>MI BOLSA ( 2 )
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="lista-items-carrito">
+        <div class="item-carrito-fila">
+          <img src="img/prod-anillo-new.jpg" alt="Anillo Hojas de Ginkgo" class="item-carrito-img">
+          <div class="flex-grow-1">
+            <div class="d-flex justify-content-between">
+              <div class="item-carrito-categoria">Colección Real</div>
+              <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
+            </div>
+            <div class="item-carrito-titulo">Anillo Hojas de Ginkgo</div>
+            <div class="item-carrito-detalles">Talla: 7 | Oro Amarillo 18K</div>
+            <div class="item-carrito-detalles">Ref: #IMP-811</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="item-carrito-precio">RD$27,990</div>
+              <div class="btn-cantidad-caja">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+              </div>
+            </div>
+            <a href="producto.html" class="ver-detalle-enlace">👁 Ver detalles de la pieza</a>
+          </div>
+        </div>
+
+        <div class="item-carrito-fila">
+          <img src="img/prod-collar-new.jpg" alt="Collar Clásico" class="item-carrito-img">
+          <div class="flex-grow-1">
+            <div class="d-flex justify-content-between">
+              <div class="item-carrito-categoria">Alta Joyería</div>
+              <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
+            </div>
+            <div class="item-carrito-titulo">Collar Clásico</div>
+            <div class="item-carrito-detalles">Largo: 45cm | Oro Amarillo 18K</div>
+            <div class="item-carrito-detalles">Ref: #IMP-920</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="item-carrito-precio">RD$74,990</div>
+              <div class="btn-cantidad-caja">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+              </div>
+            </div>
+            <a href="producto.html" class="ver-detalle-enlace">👁 Ver detalles de la pieza</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="codigo-promo-caja">
+        <input type="text" class="input-promo" placeholder="CÓDIGO DE CORTESÍA">
+        <button type="button" class="btn-aplicar-promo">APLICAR</button>
+      </div>
+
+      <div class="border-top pt-3">
+        <div class="resumen-totales-linea">
+          <span>Subtotal</span>
+          <span>RD$102,980</span>
+        </div>
+        <div class="resumen-totales-linea">
+          <span>Envío asegurado</span>
+          <span class="text-success fw-bold">Gratis</span>
+        </div>
+        <div class="resumen-totales-linea total-destacado">
+          <span>Total</span>
+          <span>RD$102,980</span>
+        </div>
+
+        <button type="button" class="btn-finalizar-pedido" data-bs-toggle="modal" data-bs-target="#modalCuenta"
+          data-bs-dismiss="offcanvas">
+          PROCEDER AL PEDIDO <i class="bi bi-arrow-right ms-1"></i>
+        </button>
+        <a href="catalogo.html" class="enlace-seguir-comprando" data-bs-dismiss="offcanvas">Continuar explorando
+          piezas</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/lib/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
