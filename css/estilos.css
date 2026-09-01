@@ -521,37 +521,14 @@ a{ text-decoration: none; }
   font-size: 0.8rem;
 }
 
-/* Ajustes de pantalla */
+/* Ajustes de Pantalla Básicos */
 @media (max-width: 991px){
   .navbar-nav{
     margin-bottom: 8px;
   }
-  .navbar-nav .nav-link{
-    padding: 10px 4px;
-  }
   .iconos-nav{
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--borde-suave);
     padding-top: 16px;
-  }
-}
-
-@media (max-width: 767px){
-  .seccion-colecciones,
-  .seccion-destacados{
-    padding: 50px 0 40px;
-  }
-  .banner-oferta{
-    padding: 45px 0;
-    text-align: center;
-  }
-  .banner-oferta h3{
-    font-size: 1.6rem;
-  }
-  .titulo-seccion{
-    font-size: 1.5rem;
-  }
-  .franja-confianza .col-6{
-    font-size: 0.75rem;
   }
 }
 
@@ -1315,4 +1292,219 @@ a{ text-decoration: none; }
 }
 .hero-titulo, .hero-texto, .hero-eyebrow {
   animation: fadeInUpHero 0.7s ease-out forwards;
+}
+
+/* ============================================================
+   ADAPTABILIDAD RESPONSIVA MULTI-DISPOSITIVO (PC, TABLET, CELULAR)
+   ============================================================ */
+
+/* 1. ESCRITORIOS GRANDES (PC / Laptops >= 1200px) */
+@media (min-width: 1200px) {
+  .hero-figura {
+    max-height: 520px;
+  }
+  .bloque-coleccion {
+    height: 380px;
+  }
+  .item-producto-img-wrap {
+    height: 320px;
+  }
+}
+
+/* 2. LAPTOPS MEDIANAS Y TABLETS HORIZONTALES (992px a 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-figura {
+    max-height: 440px;
+  }
+  .bloque-coleccion {
+    height: 340px;
+  }
+  .item-producto-img-wrap {
+    height: 280px;
+  }
+  .contenedor-img-detalle {
+    height: 480px;
+  }
+}
+
+/* 3. TABLETS (768px a 991px) */
+@media (max-width: 991px) {
+  body {
+    padding-top: 76px;
+  }
+
+  .navbar-imperio {
+    padding: 10px 0;
+  }
+  .logo-img {
+    height: 42px;
+  }
+  .navbar-collapse {
+    background: rgba(10, 10, 10, 0.98);
+    background-image: linear-gradient(180deg, rgba(20,20,20,0.95) 0%, rgba(6,6,6,0.99) 100%), url('../img/carbon-bg.png');
+    border: 1px solid var(--borde-suave);
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.9);
+  }
+  .navbar-nav .nav-link {
+    padding: 12px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+  .iconos-nav {
+    border-top: 1px solid var(--borde-suave);
+    padding-top: 16px;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .iconos-nav a {
+    font-size: 1.35rem;
+  }
+
+  .hero {
+    padding: 45px 0 35px;
+    text-align: center;
+  }
+  .hero-texto {
+    margin: 0 auto 24px;
+  }
+  .hero-figura {
+    max-width: 380px;
+    max-height: 400px;
+    margin-top: 15px;
+  }
+  .hero .d-flex {
+    justify-content: center;
+  }
+
+  .bloque-coleccion {
+    height: 300px;
+  }
+  .bloque-coleccion span {
+    font-size: 1.15rem;
+    padding: 20px 14px 14px;
+  }
+  .item-producto-img-wrap {
+    height: 260px;
+  }
+  .contenedor-img-detalle {
+    height: 420px;
+  }
+
+  .pie-imperio {
+    padding: 45px 0 25px;
+  }
+}
+
+/* 4. TELÉFONOS MÓVILES (576px a 767px) */
+@media (max-width: 767px) {
+  .banner-oferta {
+    padding: 50px 15px;
+    text-align: center;
+  }
+  .banner-oferta h3 {
+    font-size: 1.75rem;
+  }
+
+  .franja-confianza {
+    padding: 18px 0;
+  }
+  .franja-confianza .col-6 {
+    font-size: 0.76rem;
+    padding: 6px 4px;
+  }
+
+  .contenedor-img-detalle {
+    height: 380px;
+  }
+  .fila-miniaturas {
+    gap: 8px;
+    justify-content: center;
+  }
+  .miniatura-joya {
+    width: 68px;
+    height: 80px;
+  }
+  .btn-anadir-bolsa, .btn-comprar-directo {
+    width: 100% !important;
+    padding: 14px;
+  }
+}
+
+/* 5. TELÉFONOS MÓVILES PEQUEÑOS Y PANTALLAS COMPACTAS (< 575px) */
+@media (max-width: 575px) {
+  body {
+    padding-top: 72px;
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+
+  .hero-titulo {
+    font-size: 1.95rem;
+    line-height: 1.15;
+  }
+  .hero-texto {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+  .hero-figura {
+    max-width: 100%;
+    max-height: 320px;
+  }
+  .hero .d-flex {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+  .btn-imperio-dorado, .btn-imperio-contorno {
+    width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+  }
+
+  .bloque-coleccion {
+    height: 220px;
+  }
+  .bloque-coleccion span {
+    font-size: 0.98rem;
+    padding: 14px 10px 10px;
+  }
+
+  .item-producto-img-wrap {
+    height: 195px;
+    margin-bottom: 8px;
+  }
+  .item-producto h4 {
+    font-size: 0.95rem;
+  }
+  .item-producto .precio {
+    font-size: 0.92rem;
+  }
+
+  .modal-cuenta .modal-dialog {
+    margin: 12px;
+    max-width: calc(100% - 24px) !important;
+  }
+  .modal-cuenta .modal-content {
+    padding: 18px 14px;
+  }
+
+  .offcanvas-carrito {
+    max-width: 100% !important;
+  }
+  .item-carrito-img {
+    width: 65px;
+    height: 78px;
+  }
+  .item-carrito-titulo {
+    font-size: 0.85rem;
+  }
+  .item-carrito-precio {
+    font-size: 0.88rem;
+  }
 }
