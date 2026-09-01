@@ -34,7 +34,11 @@
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
         <div class="d-flex align-items-center gap-4 iconos-nav mt-4 mt-lg-0">
-          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBuscar" aria-controls="offcanvasBuscar" aria-label="Buscar"><i class="bi bi-search"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalBuscar" aria-label="Buscar" class="d-lg-none"><i
+              class="bi bi-search"></i></a>
+          <a href="#" class="d-none d-lg-block text-dark"
+            onclick="document.getElementById('searchOverlay').classList.add('active'); setTimeout(() => document.getElementById('searchInputPC').focus(), 100); return false;"
+            aria-label="Buscar"><i class="bi bi-search"></i></a>
           <a href="login.html" data-bs-toggle="modal" data-bs-target="#modalCuenta" aria-label="Iniciar sesiÃ³n"><i
               class="bi bi-person"></i></a>
           <a href="carrito.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-label="Carrito"
@@ -44,20 +48,53 @@
         </div>
       </div>
     </div>
+    <!-- Search Overlay Desktop -->
+    <div id="searchOverlay" class="search-overlay d-none d-lg-flex align-items-center shadow-sm">
+      <div class="container">
+        <form class="d-flex align-items-center w-100 position-relative"
+          onsubmit="event.preventDefault(); window.location.href='catalogo.html';">
+          <i class="bi bi-search text-muted me-3 fs-4"></i>
+          <input type="text" id="searchInputPC" class="form-control search-overlay-input flex-grow-1"
+            placeholder="Â¿QuÃ© joya estÃ¡s buscando?">
+          <button type="button" class="btn p-2 ms-3 text-dark"
+            onclick="document.getElementById('searchOverlay').classList.remove('active');" aria-label="Cerrar"><i
+              class="bi bi-x-lg fs-4"></i></button>
+        </form>
+      </div>
+    </div>
   </nav>
 
-<!-- Buscador Offcanvas -->
-<div class="offcanvas offcanvas-top offcanvas-buscar" tabindex="-1" id="offcanvasBuscar">
-  <div class="offcanvas-body d-flex align-items-center justify-content-center">
-    <div class="container position-relative">
-      <form class="d-flex align-items-center w-100" onsubmit="event.preventDefault(); window.location.href='catalogo.html';">
-        <i class="bi bi-search text-muted me-3" style="font-size: 1.5rem;"></i>
-        <input type="text" class="form-control" placeholder="¿Qué joya estás buscando?">
-        <button type="button" class="btn-close ms-3" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
-      </form>
+  <!-- Modal Buscar -->
+  <div class="modal fade" id="modalBuscar" tabindex="-1" aria-labelledby="modalBuscarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0"
+        style="background: #ffffff; border-radius: 4px; box-shadow: 0 15px 40px rgba(0,0,0,0.12);">
+        <div class="modal-body p-4 p-md-5">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="modal-title" id="modalBuscarLabel"
+              style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a1a1a;">Encuentra tu joya</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <form onsubmit="event.preventDefault(); window.location.href='catalogo.html';" class="position-relative">
+            <input type="text" class="form-control form-control-lg" placeholder="Ej. Collar de perlas..."
+              style="border: none; border-bottom: 2px solid #eaeaea; border-radius: 0; padding-left: 0; font-size: 1.15rem; box-shadow: none; background: transparent; transition: border-color 0.3s;"
+              onfocus="this.style.borderBottomColor='#cf9f27'" onblur="this.style.borderBottomColor='#eaeaea'">
+            <button type="submit" class="btn position-absolute end-0 top-50 translate-middle-y"
+              style="background: none; border: none; color: #cf9f27;"><i class="bi bi-search fs-5"></i></button>
+          </form>
+          <div class="mt-4 pt-2" style="font-size: 0.85rem; color: #777;">
+            <strong>Bï¿½squedas frecuentes:</strong>
+            <a href="catalogo.html" style="color: #444; text-decoration: underline; margin-left: 8px;">Anillos de
+              oro</a>,
+            <a href="catalogo.html" style="color: #444; text-decoration: underline; margin-left: 5px;">Colecciï¿½n
+              Real</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
+
 
   <section class="py-5 bg-light border-bottom">
     <div class="container text-center py-3">
