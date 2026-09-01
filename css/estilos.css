@@ -741,7 +741,7 @@ body {
 .offcanvas-carrito .btn-close { filter: none; }
 
 .offcanvas-carrito .offcanvas-header {
-  border-bottom: 1.5px solid rgba(207, 159, 39, 0.5);
+  border-bottom: 1px solid rgba(207, 159, 39, 0.25);
   padding: 20px 24px;
 }
 
@@ -772,7 +772,7 @@ body {
   gap: 15px;
   padding-bottom: 18px;
   margin-bottom: 18px;
-  border-bottom: 1.5px solid rgba(207, 159, 39, 0.5);
+  border-bottom: 1px solid rgba(207, 159, 39, 0.22);
 }
 
 .item-carrito-img {
@@ -903,7 +903,7 @@ body {
   color: #1a1a1a;
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1.5px solid rgba(207, 159, 39, 0.5);
+  border-top: 1px solid rgba(207, 159, 39, 0.25);
 }
 
 .btn-finalizar-pedido {
