@@ -7,7 +7,8 @@
 <link href="assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -15,14 +16,10 @@
 <nav class="navbar navbar-expand-lg navbar-imperio py-3 fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <span class="marca-d">D</span>
-      <span class="d-flex flex-column lh-1">
-        <span class="marca-nombre">IMPERIO</span>
-        <span class="marca-sub">JEWELRY</span>
-      </span>
+      <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="logo-img">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler text-light border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
     </button>
     <div class="collapse navbar-collapse" id="navImperio">
       <ul class="navbar-nav mx-lg-auto gap-lg-4">
@@ -45,7 +42,7 @@
 
 <section class="py-5">
   <div class="container">
-    <div class="d-flex align-items-center gap-3 mb-4 pb-2 border-bottom">
+    <div class="d-flex align-items-center gap-3 mb-4 pb-2 border-bottom border-secondary">
       <h1 class="titulo-seccion mb-0">Mi Bolsa de Pedido</h1>
       <span class="badge-negro px-2 py-1" style="font-size: 0.75rem;">2 PIEZAS SELECCIONADAS</span>
     </div>
@@ -54,19 +51,19 @@
       <div class="col-lg-7">
         <div class="pe-lg-3">
           <div class="item-carrito-fila py-3">
-            <img src="img/prod-anillo.jpg" alt="Anillo Hojas de Ginkgo" style="width: 90px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #e5e5e5;">
+            <img src="img/prod-anillo-new.jpg" alt="Anillo Dólar Diamantes" style="width: 90px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid var(--borde-suave);">
             <div class="flex-grow-1 ps-2">
               <div class="d-flex justify-content-between align-items-start">
                 <div>
-                  <div class="item-carrito-categoria">Colección Real</div>
-                  <h3 class="item-carrito-titulo fs-6 mb-1">Anillo Hojas de Ginkgo en Oro 18K</h3>
-                  <div class="item-carrito-detalles mb-1">Talla: 7 | Acabado: Oro Amarillo 18K</div>
+                  <div class="item-carrito-categoria">Colección Imperial</div>
+                  <h3 class="item-carrito-titulo fs-6 mb-1 text-light">Anillo Dólar Diamantes Iced-Out</h3>
+                  <div class="item-carrito-detalles mb-1">Talla: 7 | Oro Amarillo 18K</div>
                   <div class="item-carrito-detalles">Ref: #IMP-811</div>
                 </div>
                 <button type="button" class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash fs-5"></i></button>
               </div>
               <div class="d-flex justify-content-between align-items-center mt-3">
-                <div class="fs-5 fw-semibold text-dark">RD$27,990</div>
+                <div class="fs-5 fw-semibold text-dorado" style="color: var(--dorado);">RD$27,990</div>
                 <div class="btn-cantidad-caja">
                   <button type="button">-</button>
                   <span class="px-2">1</span>
@@ -78,19 +75,19 @@
           </div>
 
           <div class="item-carrito-fila py-3">
-            <img src="img/prod-collar.jpg" alt="Collar Clásico Éthéré" style="width: 90px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #e5e5e5;">
+            <img src="img/prod-collar-new.jpg" alt="Cadena Cubana Cruz Iced" style="width: 90px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid var(--borde-suave);">
             <div class="flex-grow-1 ps-2">
               <div class="d-flex justify-content-between align-items-start">
                 <div>
                   <div class="item-carrito-categoria">Alta Joyería</div>
-                  <h3 class="item-carrito-titulo fs-6 mb-1">Collar Clásico Éthéré con Pavé</h3>
+                  <h3 class="item-carrito-titulo fs-6 mb-1 text-light">Cadena Cubana Cruz Iced en Oro 18K</h3>
                   <div class="item-carrito-detalles mb-1">Largo de cadena: 45cm | Oro Amarillo 18K</div>
                   <div class="item-carrito-detalles">Ref: #IMP-920</div>
                 </div>
                 <button type="button" class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash fs-5"></i></button>
               </div>
               <div class="d-flex justify-content-between align-items-center mt-3">
-                <div class="fs-5 fw-semibold text-dark">RD$74,990</div>
+                <div class="fs-5 fw-semibold text-dorado" style="color: var(--dorado);">RD$74,990</div>
                 <div class="btn-cantidad-caja">
                   <button type="button">-</button>
                   <span class="px-2">1</span>
@@ -101,14 +98,14 @@
             </div>
           </div>
 
-          <div class="codigo-promo-caja mt-4 pt-3 border-top">
+          <div class="codigo-promo-caja mt-4 pt-3 border-top border-secondary">
             <input type="text" class="input-promo" placeholder="CÓDIGO DE CORTESÍA O PROMOCIONAL">
             <button type="button" class="btn-aplicar-promo">APLICAR CÓDIGO</button>
           </div>
 
-          <div class="d-flex align-items-center gap-3 p-3 mt-4 bg-light border">
-            <i class="bi bi-shield-check text-dark fs-3"></i>
-            <div style="font-size: 0.8rem; color: #555;">
+          <div class="d-flex align-items-center gap-3 p-3 mt-4" style="background: var(--fondo-tarjeta); border: 1px solid var(--borde-suave);">
+            <i class="bi bi-shield-check text-warning fs-3"></i>
+            <div style="font-size: 0.8rem; color: #b8b8b8;">
               <strong>Compra protegida:</strong> Cada pieza incluye certificado gemológico individualizado, estuche térmico y garantía de por vida.
             </div>
           </div>
@@ -116,12 +113,12 @@
       </div>
 
       <div class="col-lg-5">
-        <div class="p-4 border bg-white rounded-1 shadow-sm">
+        <div class="p-4 shadow-lg" style="background: var(--fondo-tarjeta); border: 1px solid var(--borde-suave);">
           <h2 class="titulo-cuenta mb-4">Resumen del Pedido</h2>
 
           <div class="resumen-totales-linea mb-2">
             <span>Subtotal de piezas</span>
-            <span class="fw-semibold text-dark">RD$102,980</span>
+            <span class="fw-semibold text-light">RD$102,980</span>
           </div>
 
           <div class="resumen-totales-linea mb-2">
@@ -136,11 +133,11 @@
 
           <div class="resumen-totales-linea total-destacado my-3">
             <span>Total a Pagar</span>
-            <span>RD$102,980</span>
+            <span style="color: var(--dorado);">RD$102,980</span>
           </div>
 
           <div class="aviso-login-requisito mb-4">
-            <i class="bi bi-person-lock me-1 text-dark"></i>
+            <i class="bi bi-person-lock me-1 text-warning"></i>
             <strong>Requisito para ordenar:</strong> Para procesar el pago y coordinar la entrega con seguridad, debes iniciar sesión con tu cuenta de cliente.
           </div>
 
@@ -161,8 +158,8 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
-        <p class="footer-marca d-flex align-items-center gap-2">
-          <span class="marca-d">D</span> IMPERIO <span class="marca-sub">JEWELRY</span>
+        <p class="footer-marca d-flex align-items-center gap-2 mb-3">
+          <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="footer-logo-img">
         </p>
         <p class="footer-texto">Joyería fina para cada historia. Piezas atemporales, hechas para durar generaciones.</p>
         <div class="d-flex gap-3 footer-redes mt-4">
@@ -209,7 +206,7 @@
         <h5 class="titulo-cuenta" id="modalCuentaLabel">
           <i class="bi bi-person-circle me-2"></i>CUENTA DE CLIENTE
         </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body">
         <div class="tab-cuenta-switch">
@@ -239,7 +236,7 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="recordarSesion">
-                <label class="form-check-label" for="recordarSesion" style="font-size: 0.8rem; color: #555;">Recordarme</label>
+                <label class="form-check-label" for="recordarSesion" style="font-size: 0.8rem; color: #aaa;">Recordarme</label>
               </div>
               <a href="#" style="font-size: 0.8rem; color: var(--dorado);">¿Olvidaste tu contraseña?</a>
             </div>
@@ -266,7 +263,7 @@
         </div>
 
         <div class="aviso-login-requisito">
-          <i class="bi bi-shield-check me-1 text-dark"></i>
+          <i class="bi bi-shield-check me-1 text-warning"></i>
           <strong>Acceso a pedidos:</strong> Para procesar y enviar pedidos se requiere iniciar sesión.
         </div>
       </div>

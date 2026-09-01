@@ -7,22 +7,19 @@
 <link href="assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body style="background: #fbfbfb;">
+<body>
 
 <nav class="navbar navbar-expand-lg navbar-imperio py-3 fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <span class="marca-d">D</span>
-      <span class="d-flex flex-column lh-1">
-        <span class="marca-nombre">IMPERIO</span>
-        <span class="marca-sub">JEWELRY</span>
-      </span>
+      <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="logo-img">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler text-light border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
     </button>
     <div class="collapse navbar-collapse" id="navImperio">
       <ul class="navbar-nav mx-lg-auto gap-lg-4">
@@ -47,7 +44,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-5">
-        <div class="modal-cuenta shadow-sm">
+        <div class="modal-cuenta shadow-lg">
           <div class="modal-content border-0 p-4 p-md-5">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h1 class="titulo-cuenta">
@@ -82,7 +79,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-4">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="recordarCheck">
-                    <label class="form-check-label" for="recordarCheck" style="font-size: 0.8rem; color: #555;">Recordarme</label>
+                    <label class="form-check-label" for="recordarCheck" style="font-size: 0.8rem; color: #aaa;">Recordarme</label>
                   </div>
                   <a href="#" style="font-size: 0.8rem; color: var(--dorado);">¿Olvidaste tu contraseña?</a>
                 </div>
@@ -109,12 +106,12 @@
             </div>
 
             <div class="aviso-login-requisito mb-3">
-              <i class="bi bi-shield-lock me-1 text-dark"></i>
+              <i class="bi bi-shield-lock me-1 text-warning"></i>
               <strong>Acceso a pedidos:</strong> Para procesar y confirmar tus pedidos se requiere una cuenta. Si solo deseas consultar precios y colecciones, puedes explorar el catálogo libremente.
             </div>
 
             <div class="text-center">
-              <a href="catalogo.html" class="text-muted" style="font-size: 0.82rem; text-decoration: underline;">
+              <a href="catalogo.html" class="text-secondary" style="font-size: 0.82rem; text-decoration: underline; color: #aaa !important;">
                 Continuar explorando el catálogo sin iniciar sesión
               </a>
             </div>
@@ -129,8 +126,8 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
-        <p class="footer-marca d-flex align-items-center gap-2">
-          <span class="marca-d">D</span> IMPERIO <span class="marca-sub">JEWELRY</span>
+        <p class="footer-marca d-flex align-items-center gap-2 mb-3">
+          <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="footer-logo-img">
         </p>
         <p class="footer-texto">Joyería fina para cada historia. Piezas atemporales, hechas para durar generaciones.</p>
         <div class="d-flex gap-3 footer-redes mt-4">
@@ -175,18 +172,18 @@
     <h5 class="titulo-carrito" id="offcanvasCarritoLabel">
       <i class="bi bi-bag me-2"></i>MI BOLSA ( 2 )
     </h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
   </div>
   <div class="offcanvas-body">
     <div class="lista-items-carrito">
       <div class="item-carrito-fila">
-        <img src="img/prod-anillo.jpg" alt="Anillo Hojas de Ginkgo" class="item-carrito-img">
+        <img src="img/prod-anillo-new.jpg" alt="Anillo Dólar Diamantes" class="item-carrito-img">
         <div class="flex-grow-1">
           <div class="d-flex justify-content-between">
-            <div class="item-carrito-categoria">Colección Real</div>
+            <div class="item-carrito-categoria">Colección Imperial</div>
             <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
           </div>
-          <div class="item-carrito-titulo">Anillo Hojas de Ginkgo</div>
+          <div class="item-carrito-titulo">Anillo Dólar Diamantes</div>
           <div class="item-carrito-detalles">Talla: 7 | Oro Amarillo 18K</div>
           <div class="item-carrito-detalles">Ref: #IMP-811</div>
           <div class="d-flex justify-content-between align-items-center mt-2">
@@ -202,13 +199,13 @@
       </div>
 
       <div class="item-carrito-fila">
-        <img src="img/prod-collar.jpg" alt="Collar Clásico" class="item-carrito-img">
+        <img src="img/prod-collar-new.jpg" alt="Cadena Cubana Cruz Iced" class="item-carrito-img">
         <div class="flex-grow-1">
           <div class="d-flex justify-content-between">
             <div class="item-carrito-categoria">Alta Joyería</div>
             <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
           </div>
-          <div class="item-carrito-titulo">Collar Clásico</div>
+          <div class="item-carrito-titulo">Cadena Cubana Cruz Iced</div>
           <div class="item-carrito-detalles">Largo: 45cm | Oro Amarillo 18K</div>
           <div class="item-carrito-detalles">Ref: #IMP-920</div>
           <div class="d-flex justify-content-between align-items-center mt-2">

@@ -7,7 +7,8 @@
 <link href="assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -15,14 +16,10 @@
 <nav class="navbar navbar-expand-lg navbar-imperio py-3 fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <span class="marca-d">D</span>
-      <span class="d-flex flex-column lh-1">
-        <span class="marca-nombre">IMPERIO</span>
-        <span class="marca-sub">JEWELRY</span>
-      </span>
+      <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="logo-img">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler text-light border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
     </button>
     <div class="collapse navbar-collapse" id="navImperio">
       <ul class="navbar-nav mx-lg-auto gap-lg-4">
@@ -43,11 +40,11 @@
   </div>
 </nav>
 
-<section class="py-5 bg-light border-bottom">
+<section class="py-5 bg-dark text-white border-bottom border-secondary">
   <div class="container text-center py-3">
     <p class="hero-eyebrow mb-2">Colección Permanente & Ediciones Exclusivas</p>
-    <h1 class="hero-titulo text-dark mb-3">Catálogo de Alta Joyería</h1>
-    <p class="text-muted mx-auto" style="max-width: 600px;">Descubre nuestras creaciones en oro macizo de 18 quilates, diamantes seleccionados y gemas preciosas talladas por nuestros maestros orfebres.</p>
+    <h1 class="hero-titulo text-white mb-3">Catálogo de Alta Joyería</h1>
+    <p class="text-secondary mx-auto" style="max-width: 600px; color: #b0b0b0 !important;">Descubre nuestras creaciones en oro macizo de 18 quilates, diamantes seleccionados, piezas Iced-Out y relojería fina talladas por nuestros maestros orfebres.</p>
   </div>
 </section>
 
@@ -58,13 +55,13 @@
         <button type="button" class="filtro-categoria-btn active" onclick="filtrarCategoria('todos', this)">Todos</button>
         <button type="button" class="filtro-categoria-btn" onclick="filtrarCategoria('anillos', this)">Anillos</button>
         <button type="button" class="filtro-categoria-btn" onclick="filtrarCategoria('collares', this)">Collares</button>
-        <button type="button" class="filtro-categoria-btn" onclick="filtrarCategoria('aretes', this)">Aretes</button>
-        <button type="button" class="filtro-categoria-btn" onclick="filtrarCategoria('pulseras', this)">Pulseras</button>
+        <button type="button" class="filtro-categoria-btn" onclick="filtrarCategoria('aretes', this)">Cadenas Especiales</button>
+        <button type="button" class="filtro-categoria-btn" onclick="filtrarCategoria('pulseras', this)">Relojes & Pulseras</button>
       </div>
 
       <div class="d-flex align-items-center gap-2">
-        <span class="text-muted" style="font-size: 0.85rem;">Ordenar por:</span>
-        <select class="form-select form-select-sm" style="width: auto; font-size: 0.85rem; border-color: #ddd;">
+        <span class="text-secondary" style="font-size: 0.85rem; color: #aaa !important;">Ordenar por:</span>
+        <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width: auto; font-size: 0.85rem;">
           <option>Recomendados</option>
           <option>Precio: menor a mayor</option>
           <option>Precio: mayor a menor</option>
@@ -78,12 +75,12 @@
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
             <span class="badge-negro position-absolute top-0 start-0 m-2 px-2 py-1" style="font-size: 0.65rem; letter-spacing: 0.08em;">EDICIÓN LIMITADA</span>
-            <img src="img/prod-anillo.jpg" alt="Anillo Hojas de Ginkgo" class="img-fluid">
+            <img src="img/prod-anillo-new.jpg" alt="Anillos Dólar Diamantes" class="img-fluid">
           </div>
           <div class="d-flex justify-content-between align-items-baseline">
-            <h4 class="mb-1">Anillo Hojas de Ginkgo</h4>
+            <h4 class="mb-1">Anillo Dólar Diamantes</h4>
           </div>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Oro Amarillo 18K & Diamantes</p>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Oro Amarillo & Blanco 18K</p>
           <p class="precio mb-0">RD$27,990</p>
         </a>
       </div>
@@ -92,10 +89,10 @@
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
             <span class="badge-negro position-absolute top-0 start-0 m-2 px-2 py-1" style="font-size: 0.65rem; letter-spacing: 0.08em;">NUEVO</span>
-            <img src="img/prod-collar.jpg" alt="Collar Clásico Éthéré" class="img-fluid">
+            <img src="img/prod-collar-new.jpg" alt="Cadena Cubana Cruz Iced" class="img-fluid">
           </div>
-          <h4 class="mb-1">Collar Clásico Éthéré</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Oro Amarillo 18K & Pavé</p>
+          <h4 class="mb-1">Cadena Cubana Cruz Iced</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Oro Amarillo 18K & Diamantes</p>
           <p class="precio mb-0">RD$74,990</p>
         </a>
       </div>
@@ -103,10 +100,10 @@
       <div class="col-6 col-lg-3 item-catalogo" data-categoria="aretes">
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
-            <img src="img/prod-aretes.jpg" alt="Aretes Hojas Esculpidas" class="img-fluid">
+            <img src="img/prod-aretes-new.jpg" alt="Cadena Dólar Oro 18K" class="img-fluid">
           </div>
-          <h4 class="mb-1">Aretes Hojas Esculpidas</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Oro Macizo 18K Satinado</p>
+          <h4 class="mb-1">Cadena Dólar Oro 18K</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Oro Macizo 18K & Pavé</p>
           <p class="precio mb-0">RD$33,990</p>
         </a>
       </div>
@@ -115,21 +112,21 @@
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
             <span class="badge-negro position-absolute top-0 start-0 m-2 px-2 py-1" style="font-size: 0.65rem; letter-spacing: 0.08em;">DESTACADO</span>
-            <img src="img/prod-pulsera.jpg" alt="Pulsera Tenis Diamantes" class="img-fluid">
+            <img src="img/prod-pulsera-new.jpg" alt="Reloj Rolex Datejust Iced-Out" class="img-fluid">
           </div>
-          <h4 class="mb-1">Pulsera Tenis Diamantes</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Diamantes Corte Brillante 2.4ct</p>
-          <p class="precio mb-0">RD$52,990</p>
+          <h4 class="mb-1">Reloj Rolex Iced-Out</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Plata & Diamantes Full Pavé</p>
+          <p class="precio mb-0">RD$152,990</p>
         </a>
       </div>
 
       <div class="col-6 col-lg-3 item-catalogo" data-categoria="anillos">
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
-            <img src="img/anillos.jpg" alt="Set Alianzas Imperiales" class="img-fluid">
+            <img src="img/anillos-new.jpg" alt="Set Anillos Cubanos Iced" class="img-fluid">
           </div>
-          <h4 class="mb-1">Set Alianzas Imperiales</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Colección Selección Real</p>
+          <h4 class="mb-1">Anillos Cubanos Iced</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Oro & Plata 18K Ley 750</p>
           <p class="precio mb-0">RD$48,500</p>
         </a>
       </div>
@@ -137,10 +134,10 @@
       <div class="col-6 col-lg-3 item-catalogo" data-categoria="collares">
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
-            <img src="img/collares.jpg" alt="Gargantilla Espiral Áurea" class="img-fluid">
+            <img src="img/collares-new.jpg" alt="Cadena Cubana con Cruz Plata" class="img-fluid">
           </div>
-          <h4 class="mb-1">Gargantilla Espiral Áurea</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Oro Amarillo 18K Pulido</p>
+          <h4 class="mb-1">Cadena Cubana Cruz Plata</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Plata Esterlina & Diamantes</p>
           <p class="precio mb-0">RD$62,000</p>
         </a>
       </div>
@@ -148,10 +145,10 @@
       <div class="col-6 col-lg-3 item-catalogo" data-categoria="aretes">
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
-            <img src="img/aretes.jpg" alt="Aros Ranurados en Oro" class="img-fluid">
+            <img src="img/aretes-new.jpg" alt="Cadena Dólar Plata Iced" class="img-fluid">
           </div>
-          <h4 class="mb-1">Aros Ranurados en Oro</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Diseño Tubular Texturizado</p>
+          <h4 class="mb-1">Cadena Dólar Plata Iced</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Diseño Exclusivo Iced-Out</p>
           <p class="precio mb-0">RD$29,900</p>
         </a>
       </div>
@@ -159,11 +156,11 @@
       <div class="col-6 col-lg-3 item-catalogo" data-categoria="pulseras">
         <a href="producto.html" class="item-producto">
           <div class="item-producto-img-wrap position-relative">
-            <img src="img/pulseras.jpg" alt="Trilogía de Brazaletes" class="img-fluid">
+            <img src="img/pulseras-new.jpg" alt="Reloj Patek Philippe Oro Iced" class="img-fluid">
           </div>
-          <h4 class="mb-1">Trilogía de Brazaletes</h4>
-          <p class="text-muted mb-1" style="font-size: 0.78rem;">Oro 18K en Tres Texturas</p>
-          <p class="precio mb-0">RD$89,000</p>
+          <h4 class="mb-1">Reloj Patek Philippe Oro</h4>
+          <p class="text-secondary mb-1" style="font-size: 0.78rem; color: #aaa !important;">Oro Rosa & Diamantes Full Pavé</p>
+          <p class="precio mb-0">RD$189,000</p>
         </a>
       </div>
     </div>
@@ -185,8 +182,8 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
-        <p class="footer-marca d-flex align-items-center gap-2">
-          <span class="marca-d">D</span> IMPERIO <span class="marca-sub">JEWELRY</span>
+        <p class="footer-marca d-flex align-items-center gap-2 mb-3">
+          <img src="img/logo-transparente.png" alt="Imperio Jewelry" class="footer-logo-img">
         </p>
         <p class="footer-texto">Joyería fina para cada historia. Piezas atemporales, hechas para durar generaciones.</p>
         <div class="d-flex gap-3 footer-redes mt-4">
@@ -303,18 +300,18 @@
     <h5 class="titulo-carrito" id="offcanvasCarritoLabel">
       <i class="bi bi-bag me-2"></i>MI BOLSA ( 2 )
     </h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
   </div>
   <div class="offcanvas-body">
     <div class="lista-items-carrito">
       <div class="item-carrito-fila">
-        <img src="img/prod-anillo.jpg" alt="Anillo Hojas de Ginkgo" class="item-carrito-img">
+        <img src="img/prod-anillo-new.jpg" alt="Anillos Dólar Diamantes" class="item-carrito-img">
         <div class="flex-grow-1">
           <div class="d-flex justify-content-between">
-            <div class="item-carrito-categoria">Colección Real</div>
+            <div class="item-carrito-categoria">Colección Imperial</div>
             <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
           </div>
-          <div class="item-carrito-titulo">Anillo Hojas de Ginkgo</div>
+          <div class="item-carrito-titulo">Anillo Dólar Diamantes</div>
           <div class="item-carrito-detalles">Talla: 7 | Oro Amarillo 18K</div>
           <div class="item-carrito-detalles">Ref: #IMP-811</div>
           <div class="d-flex justify-content-between align-items-center mt-2">
@@ -330,13 +327,13 @@
       </div>
 
       <div class="item-carrito-fila">
-        <img src="img/prod-collar.jpg" alt="Collar Clásico" class="item-carrito-img">
+        <img src="img/prod-collar-new.jpg" alt="Cadena Cubana Cruz Iced" class="item-carrito-img">
         <div class="flex-grow-1">
           <div class="d-flex justify-content-between">
             <div class="item-carrito-categoria">Alta Joyería</div>
             <button class="btn-eliminar-item" aria-label="Eliminar"><i class="bi bi-trash"></i></button>
           </div>
-          <div class="item-carrito-titulo">Collar Clásico</div>
+          <div class="item-carrito-titulo">Cadena Cubana Cruz Iced</div>
           <div class="item-carrito-detalles">Largo: 45cm | Oro Amarillo 18K</div>
           <div class="item-carrito-detalles">Ref: #IMP-920</div>
           <div class="d-flex justify-content-between align-items-center mt-2">
