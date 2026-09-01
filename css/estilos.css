@@ -11,6 +11,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--negro);
@@ -23,15 +24,13 @@ h3,
 h4,
 .marca-nombre,
 .hero-titulo {
+  font-family: 'Playfair Display', serif;
   color: #1a1a1a;
   font-size: clamp(2.1rem, 5vw, 3.4rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 0.2rem;
   margin-bottom: 22px;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* Navbar Elegante Texturizado */
@@ -71,22 +70,43 @@ a {
   object-fit: contain;
   filter: sepia(100%) hue-rotate(5deg) saturate(280%) brightness(0.93) contrast(88%);
 }
-
 .navbar-nav .nav-link {
-  color: #222222;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 6px;
+  border-bottom: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #cf9f27;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--dorado);
-  border-bottom: 2px solid var(--dorado);
+  color: #cf9f27;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .iconos-nav a {
-  color: #222222;
+  color: #000000;
   font-size: 1.25rem;
   position: relative;
   display: inline-flex;
@@ -1231,7 +1251,6 @@ body {
   color: var(--blanco);
   border-color: var(--negro);
 }
-
 /* Ajustes de responsive para Hero Images */
 @media (max-width: 991px) {
   .hero-images-wrapper {
@@ -1255,21 +1274,140 @@ body {
   .hero-img-right {
     transform: translateX(-10%) translateZ(-100px) rotateY(-15deg);
   }
+
+  /* Hero stacking on tablets */
+  .hero {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero .row {
+    flex-direction: column;
+  }
+
+  .hero .col-lg-5,
+  .hero .col-lg-7 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-texto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-botones {
+    justify-content: center;
+  }
+
+  /* Collection blocks */
+  .bloque-coleccion {
+    height: 280px;
+  }
+
+  /* Product detail page */
+  .contenedor-img-detalle {
+    margin-bottom: 30px;
+  }
+
+  .fila-miniaturas {
+    justify-content: center;
+  }
 }
 
+/* ============================================
+   MOBILE (phones) - 575px and below
+   ============================================ */
 @media (max-width: 575px) {
+
+  /* Body & general spacing */
+  body {
+    padding-top: 70px;
+  }
+
+  /* Navbar */
+  .navbar-imperio {
+    padding: 6px 0;
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
+  .navbar-toggler-icon {
+    filter: none;
+  }
+
+  /* Mobile nav menu */
+  .navbar-nav {
+    padding: 10px 0;
+    gap: 0 !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    padding: 10px 4px;
+    border-bottom: 1px solid #f0efe9;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .iconos-nav {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    justify-content: center;
+  }
+
+  /* Hero section */
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-titulo {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .hero-texto {
+    font-size: 0.85rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-botones {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-botones .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Hero images */
   .hero-images-wrapper {
-    height: 300px;
+    height: 260px;
+    margin-top: 20px;
   }
 
   .hero-img-center {
-    max-width: 180px;
-    height: 260px;
+    max-width: 160px;
+    height: 230px;
   }
 
   .hero-img-side {
-    max-width: 140px;
-    height: 210px;
+    max-width: 120px;
+    height: 180px;
   }
 
   .hero-img-left {
@@ -1281,24 +1419,141 @@ body {
     right: 5%;
     transform: translateX(0%) translateZ(-80px) rotateY(-15deg);
   }
+
+
+
+
+
+  /* Headings */
+  h1, h2, h3, h4, .marca-nombre {
+    letter-spacing: 0.08rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.3rem;
+  }
+
+  .seccion-colecciones {
+    padding: 40px 0 30px;
+  }
+
+  .bloque-coleccion {
+    height: 220px;
+  }
+
+  .bloque-coleccion span {
+    font-size: 1.1rem;
+  }
+
+  .banner-oferta {
+    padding: 35px 0;
+    text-align: center;
+  }
+
+  .banner-oferta h3 {
+    font-size: 1.35rem;
+  }
+
+  .seccion-destacados {
+    padding: 40px 0;
+  }
+
+  .item-producto-img-wrap {
+    height: 200px;
+  }
+
+  .item-producto h4 {
+    font-size: 0.85rem;
+    letter-spacing: 0.04rem;
+  }
+
+  .filtro-categoria-btn {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+  }
+
+  .franja-confianza {
+    padding: 16px 0;
+    font-size: 0.7rem;
+  }
+
+  .pie-imperio {
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+
+  .pie-imperio h5::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-redes {
+    justify-content: center;
+  }
+
+  .footer-marca {
+    justify-content: center;
+  }
+
+  .footer-newsletter {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-detalle-principal {
+    max-height: 350px;
+  }
+
+  .fila-miniaturas {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .miniatura-joya {
+    width: 55px;
+    height: 55px;
+  }
+
+  .detalle-titulo {
+    font-size: 1.4rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .detalle-precio {
+    font-size: 1.6rem;
+  }
+
+  .btn-agregar-bolsa {
+    width: 100%;
+    padding: 14px;
+    font-size: 0.85rem;
+  }
+
+  .offcanvas-carrito {
+    max-width: 100% !important;
+  }
+
+  .offcanvas-carrito .offcanvas-header,
+  .offcanvas-carrito .offcanvas-body {
+    padding: 16px 18px;
+  }
+
+  .titulo-carrito {
+    font-size: 1.1rem;
+  }
+
+  .item-carrito-img {
+    width: 65px;
+    height: 80px;
+  }
+
+  .btn-finalizar-pedido {
+    padding: 13px;
+    font-size: 0.82rem;
+  }
+
+  .acordeon-imperio .accordion-button {
+    font-size: 1rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
