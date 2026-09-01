@@ -1170,3 +1170,149 @@ a{ text-decoration: none; }
   border-color: var(--dorado);
   font-weight: 700;
 }
+
+/* ============================================================
+   EFECTOS Y ANIMACIONES ESTRATÉGICAS - URBAN LUXURY JEWELRY
+   ============================================================ */
+
+/* 1. Flotación Suave de Imagen Hero */
+.hero-figura {
+  animation: flotarHero 6s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.hero-figura:hover {
+  transform: scale(1.02);
+  box-shadow: 0 16px 50px rgba(212, 175, 55, 0.4);
+}
+@keyframes flotarHero {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* 2. Destello de Luz Metalizado en Botones Dorados */
+.btn-imperio-dorado, .btn-anadir-bolsa, .btn-finalizar-pedido, .btn-cuenta-accion, .btn-aplicar-promo {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-imperio-dorado::after, .btn-anadir-bolsa::after, .btn-finalizar-pedido::after, .btn-cuenta-accion::after, .btn-aplicar-promo::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    60deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.45) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.6s ease;
+  z-index: 2;
+}
+.btn-imperio-dorado:hover::after, .btn-anadir-bolsa:hover::after, .btn-finalizar-pedido:hover::after, .btn-cuenta-accion:hover::after, .btn-aplicar-promo:hover::after {
+  left: 150%;
+}
+
+/* 3. Brillo Flotante al Pasar el Cursor por las Tarjetas de Producto */
+.item-producto-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.item-producto-img-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+.item-producto:hover .item-producto-img-wrap::after {
+  left: 140%;
+}
+.item-producto-img-wrap img {
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item-producto:hover .item-producto-img-wrap img {
+  transform: scale(1.07);
+}
+
+/* 4. Elevación y Brillo en Bloques de Colección */
+.bloque-coleccion {
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+.bloque-coleccion:hover {
+  transform: translateY(-6px);
+  border-color: var(--dorado) !important;
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.3) !important;
+}
+
+/* 5. Subrayado Animado de Centro a Extremos en Links de Navegación */
+.navbar-nav .nav-link {
+  position: relative;
+  border-bottom: none !important;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--dorado);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* 6. Animación de Pulso Suave en Contador del Carrito */
+.badge-carrito {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.badge-carrito:hover {
+  transform: scale(1.25);
+  background-color: var(--dorado-claro) !important;
+}
+
+/* 7. Transición con Brillo en Íconos de Confianza */
+.franja-confianza .col-6 {
+  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+  cursor: default;
+}
+.franja-confianza .col-6:hover {
+  transform: translateY(-3px);
+  color: var(--dorado-claro);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* 8. Elevación Suave en Botones de Contorno */
+.btn-imperio-contorno {
+  transition: all 0.3s ease;
+}
+.btn-imperio-contorno:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+/* 9. Entrada de Encabezado Hero Suave (Fade In Up) */
+@keyframes fadeInUpHero {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-titulo, .hero-texto, .hero-eyebrow {
+  animation: fadeInUpHero 0.7s ease-out forwards;
+}
