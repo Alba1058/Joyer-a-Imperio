@@ -22,11 +22,37 @@
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="img/logo-dorado.png" alt="Imperio Jewelry" class="logo-img">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navImperio"
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavImperio"
         aria-label="Abrir menú">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navImperio">
+      <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavImperio">
+        <div class="offcanvas-header">
+          <a href="index.html"><img src="img/logo-dorado.png" alt="Imperio Jewelry" class="logo-img"></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#colecciones">Colecciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+          <hr>
+          <div class="d-flex align-items-center gap-4 iconos-nav">
+            <a href="catalogo.html" aria-label="Buscar"><i class="bi bi-search"></i></a>
+            <a href="login.html" data-bs-toggle="modal" data-bs-target="#modalCuenta" aria-label="Iniciar sesión"><i
+                class="bi bi-person"></i></a>
+            <a href="carrito.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-label="Carrito"
+              class="position-relative">
+              <i class="bi bi-bag"></i><span class="badge-carrito">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop nav (hidden on mobile) -->
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navImperio">
         <ul class="navbar-nav mx-lg-auto gap-lg-4">
           <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#colecciones">Colecciones</a></li>
@@ -342,7 +368,7 @@
                 <button type="button">+</button>
               </div>
             </div>
-            <a href="producto.html" class="ver-detalle-enlace">👁 Ver detalles de la pieza</a>
+            <a href="producto.html" class="ver-detalle-enlace"> Ver detalles de la pieza</a>
           </div>
         </div>
 
@@ -364,7 +390,7 @@
                 <button type="button">+</button>
               </div>
             </div>
-            <a href="producto.html" class="ver-detalle-enlace">👁 Ver detalles de la pieza</a>
+            <a href="producto.html" class="ver-detalle-enlace"> Ver detalles de la pieza</a>
           </div>
         </div>
       </div>
