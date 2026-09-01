@@ -52,7 +52,7 @@
     <div id="searchOverlay" class="search-overlay d-none d-lg-flex align-items-center shadow-sm">
       <div class="container">
         <form class="d-flex align-items-center w-100 position-relative"
-          onsubmit="event.preventDefault(); window.location.href='catalogo.html';">
+          onsubmit="event.preventDefault(); const q = document.getElementById('searchInputPC').value.trim(); window.location.href='catalogo.html' + (q ? '?q=' + encodeURIComponent(q) : '');">
           <i class="bi bi-search text-muted me-3 fs-4"></i>
           <input type="text" id="searchInputPC" class="form-control search-overlay-input flex-grow-1"
             placeholder="¿Qué joya estás buscando?">
@@ -75,7 +75,7 @@
               style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a1a1a;">Encuentra tu joya</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-          <form onsubmit="event.preventDefault(); window.location.href='catalogo.html';" class="position-relative">
+          <form onsubmit="event.preventDefault(); const q = this.querySelector('input').value.trim(); window.location.href='catalogo.html' + (q ? '?q=' + encodeURIComponent(q) : '');" class="position-relative">
             <input type="text" class="form-control form-control-lg" placeholder="Ej. Collar de perlas..."
               style="border: none; border-bottom: 2px solid #eaeaea; border-radius: 0; padding-left: 0; font-size: 1.15rem; box-shadow: none; background: transparent; transition: border-color 0.3s;"
               onfocus="this.style.borderBottomColor='#cf9f27'" onblur="this.style.borderBottomColor='#eaeaea'">
@@ -367,7 +367,8 @@
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/animaciones.js"></script>
 </body>
 
 </html>
