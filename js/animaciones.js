@@ -5,9 +5,8 @@
     const targets = document.querySelectorAll(
       '.catalogo-header-section h1, .catalogo-header-section p, .buscador-catalogo-wrapper, #filtrosContenedor, #selectOrdenar, ' +
       '.titulo-seccion, .enlace-ver-todo, .bloque-coleccion, .banner-oferta, .item-producto, .item-catalogo, ' +
-      '.franja-confianza .col-6, .pie-imperio .col-lg-4, .pie-imperio .col-6, .pie-imperio .footer-newsletter, ' +
-      '.tarjeta-historia, .bloque-nosotros, .contacto-caja, .form-contacto-wrap, .contenedor-img-detalle, ' +
-      '.contenedor-info-detalle, .acordeon-imperio .accordion-item, .fila-miniaturas .miniatura-item'
+      '.franja-confianza .col-6, .tarjeta-historia, .bloque-nosotros, .contacto-caja, .form-contacto-wrap, ' +
+      '.contenedor-img-detalle, .contenedor-info-detalle, .acordeon-imperio .accordion-item, .fila-miniaturas .miniatura-item'
     );
 
     targets.forEach(function (el) {
@@ -20,9 +19,9 @@
     rows.forEach(function (row) {
       const items = row.querySelectorAll('.reveal-on-scroll');
       items.forEach(function (item, idx) {
-        const delay = (idx % 4) * 0.1;
+        const delay = (idx % 4) * 0.22;
         if (delay > 0) {
-          item.style.transitionDelay = delay + 's';
+          item.style.animationDelay = delay + 's';
         }
       });
     });
@@ -36,8 +35,8 @@
           }
         });
       }, {
-        threshold: 0.12,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -20px 0px'
       });
 
       targets.forEach(function (el) {
